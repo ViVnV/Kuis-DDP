@@ -19,7 +19,7 @@ func main() {
 	fmt.Println()
 	fmt.Println("Berikut ada beberapa soal yang perlu kamu jawab :")
 
-	// Menyiapkan slice untuk pertanyaan-pertanyaan
+	// Slice untuk pertanyaan-pertanyaan
 	pertanyaan := []Question{
 		{
 			"Bahasa pemrograman apa yang digunakan untuk perancangan design web?",
@@ -31,10 +31,9 @@ func main() {
 			[]string{"Marshall D Teach", "Gol D Roger", "Monkey D Luffy", "Akagami no Shanks"},
 			1,
 		},
-		// Tambahkan pertanyaan selanjutnya di sini
 	}
 
-	// Menyiapkan variabel untuk menyimpan skor dan statistik jawaban
+	// Variabel untuk menyimpan skor dan statistik jawaban
 	var scoreUser int
 	var jawabanBenar int
 	var jawabanSalah int
@@ -50,7 +49,7 @@ func main() {
 			fmt.Printf("%d. %s\n", i, pilihan)
 		}
 
-		fmt.Print("Tentukan pilihan jawaban mu dengan mengisikan nomor : ")
+		fmt.Print("Tentukan pilihan jawaban mu dengan mengisikan nomor (0, 1, 2, 3) : ")
 		fmt.Scanln(&userAnswer)
 
 		fmt.Println()
